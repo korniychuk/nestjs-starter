@@ -1,4 +1,8 @@
-/node_modules
 .idea/$CACHE_FILE$
 .idea/dbnavigator.xml
 .idea/workspace.xml
+
+# JavaScript, TypeScript, NodeJS
+/dist
+/node_modules
+*.tsbuildinfo

@@ -12,13 +12,11 @@
     ],
     "module": "commonjs",
     "moduleResolution": "node",
-    "noEmit": true,
     "noEmitHelpers": true,
     "outDir": "./dist",
     "rootDir": "src",
     "sourceMap": true,
     "strict": true,
-    "strictNullChecks": false,
     "target": "es2019",
     "typeRoots": [
       "node_modules/@types"
