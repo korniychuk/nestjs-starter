@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "test": "jest -c jest.config.js",
+    "test:watch": "npm run test -- --watch",
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "lint": "eslint --ext .js,.ts src/**",
     "lint:fix": "npm run lint -- --fix",
