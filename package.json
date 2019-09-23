@@ -11,19 +11,21 @@
     "url": "git+https://github.com/korniychuk/wallaby-ts-webpack-starter.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/korniychuk/wallaby-ts-webpack-starter/issues"
   },
   "homepage": "https://github.com/korniychuk/wallaby-ts-webpack-starter#readme",
+  "dependencies": {
+    "lodash": "~4.17.15"
+  },
   "devDependencies": {
-    "@types/jest": "~24.0.18",
-    "@types/lodash": "~4.14.138",
     "@babel/core": "~7.6.0",
     "@babel/preset-env": "~7.6.0",
     "@babel/preset-typescript": "~7.6.0",
-    "typescript": "~3.6.3",
+    "@types/jest": "~24.0.18",
+    "@types/lodash": "~4.14.138",
     "jest": "~24.9.0",
-    "lodash": "~4.17.15"
+    "typescript": "~3.6.3"
   }
 }
