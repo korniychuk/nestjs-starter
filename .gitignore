@@ -1,2 +1,4 @@
-/.idea
 /node_modules
+.idea/$CACHE_FILE$
+.idea/dbnavigator.xml
+.idea/workspace.xml
