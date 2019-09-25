@@ -4,7 +4,9 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "jest -c jest.config.js",
+    "lint": "eslint --ext .js,.ts src/**",
+    "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -23,9 +25,12 @@
     "@babel/core": "~7.6.0",
     "@babel/preset-env": "~7.6.0",
     "@babel/preset-typescript": "~7.6.0",
-    "@types/node": "~12.7.5",
     "@types/jest": "~24.0.18",
     "@types/lodash": "~4.14.138",
+    "@types/node": "~12.7.5",
+    "@typescript-eslint/eslint-plugin": "~2.3.1",
+    "@typescript-eslint/parser": "~2.3.1",
+    "eslint": "~6.4.0",
     "jest": "~24.9.0",
     "typescript": "~3.6.3"
   }
