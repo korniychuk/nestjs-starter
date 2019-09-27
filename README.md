@@ -16,21 +16,25 @@
 ## Ways to use
 
 1. Clone as is
+
     1. `git clone git@github.com:korniychuk/wallaby-ts-starter.git`
     2. `cd wallaby-ts-starter`
     3. `yarn`
 2. Fork
+
     0. Click **Fork** git button
     1. `git clone git@github.com:YOUR_GIT_NAME/wallaby-ts-starter.git`
     2. `cd wallaby-ts-starter`
     3. `yarn`
 3. Creating from template
+
     0. Click **Fork** git button
     1. Create new repository and specify template ![template](./resources/readme.git-create-from-template.png)
     1. `git clone git@github.com:YOUR_GIT_NAME/NEW_REPOSITORY_NAME.git`
     2. `cd NEW_REPOSITORY_NAME`
     3. `yarn`
 4. Using with already cloned repository as an additional origin for pulling updates
+
     1. `git remote add template git@github.com:korniychuk/wallaby-ts-starter.git`
     2. `git fetch`
     3. `git merge template/master`
@@ -48,11 +52,13 @@
 
 ### How to run tests
 
-* All tests  
+* All tests
+
   `npm run test`  
   `npm run test:watch`
-* Specific tests  
-  `npm run test -- src/my.spec.ts`    
+* Specific tests
+
+  `npm run test -- src/my.spec.ts`  
   `npm run test:watch -- src/my.spec.ts`
 
 ## Author
