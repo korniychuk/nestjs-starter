@@ -36,8 +36,8 @@
 4. Using with already cloned repository as an additional origin for pulling updates
 
     1. `git remote add template git@github.com:korniychuk/wallaby-ts-starter.git`
-    2. `git fetch`
-    3. `git merge template/master`
+    2. `git fetch template`
+    3. `git merge --allow-unrelated-histories template/master`
 
 ## How to
 
