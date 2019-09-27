@@ -6,7 +6,7 @@
 
 * Wallaby JS works out of the box without any additional config  
   Notice: How to run in "Without Configuration" mode ([Official Wallaby JS Guide](https://wallabyjs.com/docs/intro/config.html#automatic-configuration))
-* ESLint for linking JS & TS files (TSLint is outdated for 2019). Basic rules configured.
+* ESLint for linting JS & TS files (TSLint is outdated for 2019). Basic rules configured.
 * Unit Testing via Jest 24+
 * Type Script 3.6+ via Babel
 * Yarn for packages installation and `check-yarn` utility to prevent packages installation via `npm`
