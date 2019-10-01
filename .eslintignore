@@ -1,0 +1,5 @@
+dist/
+lib/
+docs/
+**/node_modules/*
+.git/
