@@ -9,13 +9,13 @@
     "lint:fix": "npm run lint -- --fix",
     "preinstall": "node ./tools/check-yarn.js",
     "test": "jest -c jest.config.js",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "merge-tpl-repo": "tools/merge-with-repository-template.sh"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/korniychuk/wallaby-ts-webpack-starter.git"
   },
-  "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/korniychuk/wallaby-ts-webpack-starter/issues"

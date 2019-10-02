@@ -13,6 +13,7 @@
 * Yarn for packages installation and `check-yarn` utility to prevent packages installation via `npm`
 * `.nvmrc`
 * Nothing platform related. This repository template can be used for NodeJS and for Browser development.
+* Utility to automatically pull updates from this template repository (`npm run merge-tpl-repo`)
 
 ## Ways to use
 
@@ -36,9 +37,17 @@
     3. `yarn`
 4. Using with already cloned repository as an additional origin for pulling updates
 
-    1. `git remote add template git@github.com:korniychuk/wallaby-ts-starter.git`
-    2. `git fetch template`
-    3. `git merge --allow-unrelated-histories template/master`
+    1. Automatically
+    
+       ```bash
+       npm run merge-tpl-repo
+       ```
+    
+    2. Manually
+
+        1. `git remote add template git@github.com:korniychuk/wallaby-ts-starter.git`
+        2. `git fetch template`
+        3. `git merge --allow-unrelated-histories template/master`
 
 ## How to
 
