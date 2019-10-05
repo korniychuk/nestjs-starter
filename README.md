@@ -13,7 +13,7 @@
 * Yarn for packages installation and `check-yarn` utility to prevent packages installation via `npm`
 * `.nvmrc`
 * Nothing platform related. This repository template can be used for NodeJS and for Browser development.
-* [Utility](/blob/master/tools/merge-with-repository-template.sh) to automatically pull updates from this template repository (`npm run merge-tpl-repo`)
+* [Utility](/tools/merge-with-repository-template.sh) to automatically pull updates from this template repository (`npm run merge-tpl-repo`)
 * Git hooks via [husky](https://www.npmjs.com/package/husky)
 
 ## Ways to use
