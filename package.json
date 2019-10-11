@@ -47,7 +47,7 @@
   "husky": {
     "hooks": {
       "pre-push": "npm run prepush",
-      "post-merge": "yarn install"
+      "post-merge": "IS_YARN=true yarn install"
     }
   }
 }
