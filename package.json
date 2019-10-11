@@ -14,7 +14,7 @@
     "tpl-repo": "tools/merge-with-repository-template.sh",
     "tpl-repo:check": "npm run tpl-repo -- check",
     "tpl-repo:merge": "npm run tpl-repo -- merge",
-    "prepush": "npm run lint && npm run test && npm run build:prod && npm run tpl-repo:check"
+    "pre-push": "npm run lint && npm run test && npm run build:prod && npm run tpl-repo:check"
   },
   "repository": {
     "type": "git",
@@ -46,7 +46,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run prepush",
+      "pre-push": "npm run pre-push",
       "post-merge": "IS_YARN=true yarn install"
     }
   }
