@@ -8,13 +8,13 @@
     "build:prod": "npm run build",
     "lint": "eslint --ext .js,.ts src/**",
     "lint:fix": "npm run lint -- --fix",
+    "pre-push": "npm run lint && npm run test && npm run build:prod && npm run tpl-repo:check",
     "preinstall": "node ./tools/check-yarn.js",
     "test": "jest -c jest.config.js",
     "test:watch": "npm run test -- --watch",
     "tpl-repo": "tools/merge-with-repository-template.sh",
     "tpl-repo:check": "npm run tpl-repo -- check",
-    "tpl-repo:merge": "npm run tpl-repo -- merge",
-    "pre-push": "npm run lint && npm run test && npm run build:prod && npm run tpl-repo:check"
+    "tpl-repo:merge": "npm run tpl-repo -- merge"
   },
   "repository": {
     "type": "git",
