@@ -5,21 +5,21 @@
   "description": "Nest TypeScript starter repository",
   "license": "MIT",
   "scripts": {
-    "prebuild": "rimraf dist",
-    "preinstall": "node ./tools/check-yarn.js",
-    "pre-push": "npm run lint && npm run test && npm run build:prod && npm run tpl-repo:check",
     "build": "nest build",
     "lint": "eslint --ext .js,.ts src/**",
     "lint:fix": "npm run lint -- --fix",
+    "pre-push": "npm run lint && npm run test && npm run build:prod && npm run tpl-repo:check",
+    "prebuild": "rimraf dist",
+    "preinstall": "node ./tools/check-yarn.js",
     "start": "nest start",
-    "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
+    "start:dev": "nest start --watch",
     "start:prod": "node dist/main",
     "test": "jest",
-    "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@nestjs/common": "^6.8.0",
