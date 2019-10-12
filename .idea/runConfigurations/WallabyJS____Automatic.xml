@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="WallabyJS :: Automatic" type="wallaby" factoryName="Wallaby.js" configType="Automatic" configFolder="$PROJECT_DIR$" node="$USER_HOME$/.nvm/versions/node/v12.4.0/bin/node" wsl="No">
+    <method v="2" />
+  </configuration>
+</component>
