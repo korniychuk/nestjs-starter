@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "nest build",
+    "build:prod": "npm run build",
     "lint": "eslint --ext .js,.ts src/**",
     "lint:fix": "npm run lint -- --fix",
     "pre-push": "npm run lint && npm run test && npm run build:prod && npm run tpl-repo:check",
