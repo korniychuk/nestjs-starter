@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "./src",
     "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -13,8 +12,6 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noEmitHelpers": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
     "removeComments": true,
     "sourceMap": true,
     "strict": true,
@@ -22,10 +19,16 @@
     "typeRoots": [
       "node_modules/@types"
     ],
-    "types":     [
+    "types": [
       "jest",
       "node"
-    ]
+    ],
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "rootDir": "./src",
+    "paths": {
+      "@app/*": [ "./app/*" ]
+    }
   },
   "include": [
     "src/**/*.ts"

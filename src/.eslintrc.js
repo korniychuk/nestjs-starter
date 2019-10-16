@@ -4,6 +4,17 @@ module.exports = {
     project: './tsconfig.json',
     ecmaVersion: 2020,
   },
+  "settings": {
+    "import/parsers":  {
+      "@typescript-eslint/parser": [".ts"]
+    },
+    "import/resolver": {
+      "typescript": {
+        // use <root>/path/to/folder/tsconfig.json
+        // "directory": "./path/to/folder"
+      },
+    },
+  },
   plugins: [
     '@typescript-eslint',
   ],
