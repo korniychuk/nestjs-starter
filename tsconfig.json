@@ -27,7 +27,7 @@
     "baseUrl": "./src",
     "rootDir": "./src",
     "paths": {
-      "@app/*": [ "./app/*" ]
+      "@app/*": [ "app/*" ]
     }
   },
   "include": [

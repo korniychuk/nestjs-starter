@@ -12,7 +12,7 @@
     "pre-push": "npm run lint && npm run test && npm run build:prod && npm run tpl-repo:check",
     "prebuild": "rimraf dist",
     "preinstall": "node ./tools/check-yarn.js",
-    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "start": "IS_TS_NODE=true ts-node -r tsconfig-paths/register src/main.ts",
     "start:debug": "tsc-watch -p tsconfig.build.json --onSuccess \"node --inspect-brk dist/main.js\"",
     "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \"node dist/main.js\"",
     "start:prod": "node dist/main.js",
@@ -40,6 +40,7 @@
     "@nestjs/testing": "~6.8.0",
     "@types/express": "~4.17.1",
     "@types/jest": "~24.0.18",
+    "@types/module-alias": "~2.0.0",
     "@types/node": "~12.7.8",
     "@types/supertest": "~2.0.8",
     "@typescript-eslint/eslint-plugin": "~2.3.3",
@@ -57,6 +58,7 @@
     "ts-jest": "~24.1.0",
     "ts-loader": "~6.2.0",
     "ts-node": "~8.4.1",
+    "tsc-watch": "~4.0.0",
     "tsconfig-paths": "~3.9.0",
     "typescript": "~3.6.3"
   },
@@ -65,8 +67,5 @@
       "pre-push": "npm run pre-push",
       "post-merge": "IS_YARN=true yarn install"
     }
-  },
-  "_moduleAliases": {
-    "@app": "./dist/app"
   }
 }

@@ -1,10 +1,6 @@
-/* eslint-disable import/first */
-if (!process.env.IS_TS_NODE) {
-  // eslint-disable-next-line global-require
-  require('module-alias/register');
-}
-
 import { NestFactory } from '@nestjs/core';
+
+import './ts-paths-fix';
 import { AppModule } from '@app/app.module';
 
 async function bootstrap(): Promise<void> {
