@@ -49,5 +49,5 @@ module.exports = {
       functions: false,
       classes: false,
     }],
-  }
+  },
 };
