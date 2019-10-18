@@ -8,7 +8,7 @@ const { coverageDirectory: deleted, ...common } = require('../jest.config');
 const moduleNameMapperAddRootDirSuffix = (moduleNameMapper, suffix) => Object.keys(moduleNameMapper).reduce(
   (mapper, alias) => ({
     ...mapper,
-    [alias]: moduleNameMapper[alias].replace('<rootDir>', `<rootDir>${suffix}`),
+    [alias]: moduleNameMapper[alias].replace('<rootDir>', `<rootDir>${ suffix }`),
   }),
   {},
 );

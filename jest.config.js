@@ -1,3 +1,12 @@
+const { getTsConfigPaths } = require('./src/ts-paths-fix-helpers');
+
+const makeModuleNameMapper = () => getTsConfigPaths()
+    .map(({ alias, path }) => ({
+      alias: `${ alias }/(.*)`,
+      path:  `<rootDir>/${ path }/$1`,
+    }))
+    .reduce((all, { alias, path }) => ({ ...all, [alias]: path }), {});
+
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
 
@@ -75,9 +84,7 @@ module.exports = {
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
   // moduleNameMapper: {},
-  moduleNameMapper: {
-    '@app/(.*)': '<rootDir>/app/$1',
-  },
+  moduleNameMapper: makeModuleNameMapper(),
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],

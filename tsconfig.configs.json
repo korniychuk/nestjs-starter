@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "incremental": false,
+    "declaration": false,
+    "outDir": ".",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {},
+    "sourceMap": false
+  },
+  "include": [
+    "src/ts-paths-fix-helpers.ts"
+  ]
+}
