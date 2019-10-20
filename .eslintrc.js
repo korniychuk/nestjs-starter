@@ -74,6 +74,7 @@ module.exports = {
       allowAllPropertiesOnSameLine: true,
     }],
     'no-mixed-operators': 'off',
-    'strict': 'off'
-  }
+    'strict': 'off',
+    'template-curly-spacing': ['error', 'always'],
+  },
 };
