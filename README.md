@@ -13,8 +13,8 @@
 * Yarn for packages installation and [`check-yarn`](/tools/check-yarn.js) utility to prevent packages installation via `npm`
 * [`.nvmrc`](https://github.com/nvm-sh/nvm#nvmrc)
 * Nothing platform related. This repository template can be used for NodeJS and for Browser development.
-* [Utility](/tools/merge-with-repository-template.sh) to automatically pull updates from this template repository (`npm run merge-tpl-repo`)
 * Git hooks via [husky](https://www.npmjs.com/package/husky)
+* [Utility](/tools/merge-with-repository-template.sh) to automatically pull updates from this template repository (`npm run tpl-repo:merge`)
 
 ## Ways to use
 
