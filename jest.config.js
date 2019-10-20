@@ -1,4 +1,4 @@
-const { getTsConfigPaths } = require('./src/ts-paths-fix-helpers');
+const { getTsConfigPaths } = require('./configs/ts-paths-fix-helpers');
 
 const makeModuleNameMapper = () => getTsConfigPaths()
     .map(({ alias, path }) => ({

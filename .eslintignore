@@ -3,4 +3,3 @@ lib/
 docs/
 **/node_modules/*
 .git/
-/src/ts-paths-fix-helpers.js

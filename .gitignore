@@ -390,4 +390,4 @@ Temporary Items
 docker-compose.yml
 .env
 dist
-/src/ts-paths-fix-helpers.js*
+/configs/ts-paths-fix-helpers.js*

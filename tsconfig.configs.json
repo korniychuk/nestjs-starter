@@ -11,6 +11,6 @@
     "sourceMap": false
   },
   "include": [
-    "src/ts-paths-fix-helpers.ts"
+    "configs/ts-paths-fix-helpers.ts"
   ]
 }
