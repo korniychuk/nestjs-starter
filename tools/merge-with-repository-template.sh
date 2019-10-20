@@ -6,7 +6,7 @@ declare -r colorYellow='\033[0;33m'
 declare -r colorBYellow='\033[1;33m'
 declare -r colorNc='\033[0m' # No Color
 
-declare -r tplRepoGit='git@github.com:korniychuk/wallaby-ts-starter.git'
+declare -r tplRepoGit='git@github.com:korniychuk/nestjs-starter.git'
 
 function execute() {
   exec "${@}" 2> >(awk "${prefixAwkPattern}" 1>&2) | awk "${prefixAwkPattern}"

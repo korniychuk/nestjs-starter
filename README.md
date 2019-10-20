@@ -16,25 +16,77 @@
 <a href="https://travis-ci.org/nestjs/nest"><img src="https://img.shields.io/travis/nestjs/nest/master.svg?label=linux" alt="Linux" /></a>
 <a href="https://coveralls.io/github/nestjs/nest?branch=master"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#5" alt="Coverage" /></a>
 <a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec"><img src="https://img.shields.io/badge/Donate-PayPal-dc3d53.svg"/></a>
-  <a href="https://twitter.com/nestframework"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Installation
+## Main differences of [nestjs/typescript-starter](https://github.com/nestjs/typescript-starter):
 
-```bash
-$ npm install
-```
+* TypeScript [Path Aliases](/tsconfig.json#L29) configured
+  * You can make imports like `import { ... } from '@app/...;`
+  * You can add your own aliases
+  * Aliases configuration place in the one place [tsconfig.json](tsconfig.json).
+  * Jest & `module-alias` imports `paths` config using [ts-paths-fix](/src/ts-paths-fix-apply.ts)
+* Yarn for packages installation and [`check-yarn`](/tools/check-yarn.js) utility to prevent packages installation via `npm`
+* [ESLint](https://eslint.org) for linting JS & TS files ([TSLint is deprecated in 2019](https://github.com/palantir/tslint#tslint)). Basic rules configured.
+* Very strict linting [config](/src/.eslintrc.js) ([airbnb](https://www.npmjs.com/package/eslint-config-airbnb-base) + [unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn) + [some other plugins](/src/.eslintrc.js#L11))
+* [`.nvmrc`](https://github.com/nvm-sh/nvm#nvmrc)
+* [Utility](/tools/merge-with-repository-template.sh) to automatically pull updates from this template repository (`npm run merge-tpl-repo`)
+* Git hooks via [husky](https://www.npmjs.com/package/husky)
 
-## Running the app
+**Other features:**
+
+* Wallaby JS works out of the box without any additional config  
+  Notice: How to run in "Without Configuration" mode ([Official Wallaby JS Guide](https://wallabyjs.com/docs/intro/config.html#automatic-configuration))
+
+## Ways to use
+
+1. Clone as is
+
+    1. `git clone git@github.com:korniychuk/nestjs-starter.git`
+    2. `cd nestjs-starter`
+    3. `yarn`
+2. Fork
+
+    0. Click **Fork** git button
+    1. `git clone git@github.com:YOUR_GIT_NAME/nestjs-starter.git`
+    2. `cd nestjs-starter`
+    3. `yarn`
+3. Creating from template
+
+    0. Click **Fork** git button
+    1. Create new repository and specify template ![template](readme/readme.git-create-from-template.png)
+    1. `git clone git@github.com:YOUR_GIT_NAME/NEW_REPOSITORY_NAME.git`
+    2. `cd NEW_REPOSITORY_NAME`
+    3. `yarn`
+4. Using with already cloned repository as an additional origin for pulling updates
+
+    1. Automatically
+    
+       ```bash
+       npm run merge-tpl-repo
+       ```
+    
+    2. Manually
+
+        1. `git remote add template git@github.com:korniychuk/nestjs-starter.git`
+        2. `git fetch template`
+        3. `git merge --allow-unrelated-histories template/master`
+
+## How to
+
+### How to use NodeJS version from the `.nvmrc`
+
+1. Install NVM
+2. Use `.nvmrc` file one of the next ways:
+
+    * Execute `nvm use` in the project root directory
+    * Install [NVM Loader](https://github.com/korniychuk/ankor-shell) and your .nvmrc will be loaded automatically when you open the terminal.
+      ![NVM Loader demo](readme/readme.nvm-loader.png)
+      
+### Running the app
 
 ```bash
 # development
@@ -43,15 +95,26 @@ $ npm run start
 # watch mode
 $ npm run start:dev
 
+# debug mode
+$ npm run start:debug
+
 # production mode
+$ npm run build:prod
 $ npm run start:prod
 ```
 
-## Test
+### Test
 
 ```bash
 # unit tests
 $ npm run test
+
+# watch mode
+$ npm run test:watch
+
+# specific tests
+npm run test -- src/my.spec.ts
+npm run test:watch -- src/my.spec.ts
 
 # e2e tests
 $ npm run test:e2e
@@ -60,16 +123,17 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+### Lint
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+```bash
+# Just show problems
+$ npm run lint
 
-## Stay in touch
+# Fix problems if it is possible
+$ npm run lint:fix
+```
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## Author
 
-## License
-
-  Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+| [<img src="https://www.korniychuk.pro/avatar.jpg" width="100px;"/><br /><sub>Anton Korniychuk</sub>](https://korniychuk.pro) |
+| :---: |
