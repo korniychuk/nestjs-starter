@@ -27,7 +27,7 @@
 * TypeScript [Path Aliases](/tsconfig.json#L29) configured
   * You can make imports like `import { ... } from '@app/...;`
   * You can add your own aliases
-  * Aliases configuration place in the one place [tsconfig.json](tsconfig.json#L29).
+  * Aliases configuration in the one place [tsconfig.json](tsconfig.json#L29).
   * Jest & `module-alias` imports `paths` config using [ts-paths-fix](/src/ts-paths-fix-apply.ts)
 * Yarn for packages installation and [`check-yarn`](/tools/check-yarn.js) utility to prevent packages installation via `npm`
 * [ESLint](https://eslint.org) for linting JS & TS files ([TSLint is deprecated in 2019](https://github.com/palantir/tslint#tslint)).
