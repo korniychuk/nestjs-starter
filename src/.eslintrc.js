@@ -38,5 +38,8 @@ module.exports = {
       functions: false,
       classes: false,
     }],
-  }
+    "@typescript-eslint/explicit-member-accessibility": ["error"],
+    'function-paren-newline': 'off',
+    'implicit-arrow-linebreak': 'off',
+  },
 };
