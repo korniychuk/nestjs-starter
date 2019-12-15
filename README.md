@@ -9,7 +9,7 @@
 * [ESLint](https://eslint.org) for linting JS & TS files ([TSLint is deprecated in 2019](https://github.com/palantir/tslint#tslint)). Basic rules configured.
 * Very strict linting [config](/src/.eslintrc.js) ([airbnb](https://www.npmjs.com/package/eslint-config-airbnb-base) + [unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn) + [some other plugins](/src/.eslintrc.js#L11))
 * Unit Testing via [Jest](https://jestjs.io/) 24+
-* [TypeScript](http://typescriptlang.org/) 3.6+ via [Babel](https://babeljs.io/docs/en/babel-preset-typescript)
+* [TypeScript](http://typescriptlang.org/) 3.7+ via [Babel](https://babeljs.io/docs/en/babel-preset-typescript)
 * Yarn for packages installation and [`check-yarn`](/tools/check-yarn.js) utility to prevent packages installation via `npm`
 * [`.nvmrc`](https://github.com/nvm-sh/nvm#nvmrc)
 * Nothing platform related. This repository template can be used for NodeJS and for Browser development.
