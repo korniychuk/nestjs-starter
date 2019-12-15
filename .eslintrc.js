@@ -77,7 +77,8 @@ module.exports = {
     'strict': 'off',
     'template-curly-spacing': ['error', 'always'],
     'semi-style': 'off',
-    'no-multi-spaces': 'off'
+    'no-multi-spaces': 'off',
+    'import/extensions': ['error', 'never', { 'json': 'always' }]
   },
   overrides: [
     {
@@ -90,12 +91,6 @@ module.exports = {
       "settings": {
         "import/parsers":  {
           "@typescript-eslint/parser": [".ts"]
-        },
-        "import/resolver": {
-          "typescript": {
-            // use <root>/path/to/folder/tsconfig.json
-            // "directory": "./path/to/folder"
-          },
         },
       },
       plugins: [
