@@ -135,5 +135,11 @@ module.exports = {
         '@typescript-eslint/no-inferrable-types': 'off',
       },
     },
+    {
+      files: ['**/*spec.ts'],
+      rules: {
+        'max-classes-per-file': 'off',
+      },
+    },
   ],
 };
