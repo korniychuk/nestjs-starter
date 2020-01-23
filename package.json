@@ -24,6 +24,11 @@
   "bugs": {
     "url": "https://github.com/korniychuk/wallaby-ts-webpack-starter/issues"
   },
+  "engines":  {
+    "node": "^12.14.1",
+    "npm": "^6.13.4",
+    "yarn": "^1.21.1"
+  },
   "homepage": "https://github.com/korniychuk/wallaby-ts-webpack-starter#readme",
   "dependencies": {},
   "devDependencies": {
