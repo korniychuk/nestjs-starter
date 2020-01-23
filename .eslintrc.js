@@ -15,10 +15,7 @@ module.exports = {
     'airbnb-base',
   ],
   rules: {
-    'import/no-extraneous-dependencies': [
-      'error',
-      { devDependencies: ['**/*spec.ts'] },
-    ],
+    'import/no-extraneous-dependencies': [ 'error' ],
     'import/prefer-default-export': 'off',
     'filenames/match-regex': ['error', /^[0-9a-z.-]+$/, true],
     'consistent-return': 0,
@@ -106,7 +103,7 @@ module.exports = {
         '@typescript-eslint/restrict-plus-operands': 'error',
         'import/no-extraneous-dependencies': [
           'error',
-          { devDependencies: ['**/*spec.ts'] },
+          { devDependencies: ['**/*spec.ts', '**/global.d.ts'] },
         ],
         'no-useless-constructor': 'off',
         '@typescript-eslint/no-useless-constructor': 'error',
