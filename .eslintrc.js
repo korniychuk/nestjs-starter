@@ -89,6 +89,13 @@ module.exports = {
         "import/parsers":  {
           "@typescript-eslint/parser": [".ts"]
         },
+        "import/resolver": {
+          "typescript": {
+            // use <root>/path/to/folder/tsconfig.json
+            // More examples: https://www.npmjs.com/package/eslint-import-resolver-typescript#configuration
+            "directory": "./tsconfig.json"
+          },
+        },
       },
       plugins: [
         '@typescript-eslint',
@@ -130,6 +137,7 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/unbound-method': 'off',
         '@typescript-eslint/no-inferrable-types': 'off',
+        'import/extensions': ['error', 'ignorePackages', { 'json': 'always' }]
       },
     },
     {
