@@ -1,8 +1,22 @@
 {
   "name": "wallaby-ts-webpack",
-  "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/korniychuk/wallaby-ts-webpack-starter/issues"
+  },
   "description": "",
+  "engines": {
+    "node": "^12.14.1",
+    "npm": "^6.13.4",
+    "yarn": "^1.21.1"
+  },
+  "homepage": "https://github.com/korniychuk/wallaby-ts-webpack-starter#readme",
+  "license": "MIT",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korniychuk/wallaby-ts-webpack-starter.git"
+  },
+  "version": "1.0.0",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "build:prod": "npm run build",
@@ -16,20 +30,6 @@
     "tpl-repo:check": "npm run tpl-repo -- check",
     "tpl-repo:merge": "npm run tpl-repo -- merge"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/korniychuk/wallaby-ts-webpack-starter.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/korniychuk/wallaby-ts-webpack-starter/issues"
-  },
-  "engines": {
-    "node": "^12.14.1",
-    "npm": "^6.13.4",
-    "yarn": "^1.21.1"
-  },
-  "homepage": "https://github.com/korniychuk/wallaby-ts-webpack-starter#readme",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "~7.7.5",
