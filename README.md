@@ -30,6 +30,7 @@
   * Aliases configuration in the one place [tsconfig.json](tsconfig.json#L29).
   * Jest & `module-alias` imports `paths` config using [ts-paths-fix](/src/ts-paths-fix-apply.ts)
 * Yarn for packages installation and [`check-yarn`](/tools/check-yarn.js) utility to prevent packages installation via `npm`
+* Additional Jest matchers from [`jest-extended`](https://github.com/jest-community/jest-extended) configured
 * [ESLint](https://eslint.org) for linting JS & TS files ([TSLint is deprecated in 2019](https://github.com/palantir/tslint#tslint)).
 * Very strict linting [config](/src/.eslintrc.js) ([airbnb](https://www.npmjs.com/package/eslint-config-airbnb-base) + [unicorn](https://www.npmjs.com/package/eslint-plugin-unicorn) + [some other plugins](/src/.eslintrc.js#L11))
 * [`.nvmrc`](https://github.com/nvm-sh/nvm#nvmrc)

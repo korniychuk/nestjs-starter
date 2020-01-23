@@ -1,9 +1,22 @@
 {
   "name": "nest-typescript-starter",
-  "private": true,
-  "version": "1.0.0",
   "description": "Nest TypeScript starter repository",
   "license": "MIT",
+  "private": true,
+  "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/korniychuk/wallaby-ts-webpack-starter/issues"
+  },
+  "homepage": "https://github.com/korniychuk/wallaby-ts-webpack-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korniychuk/wallaby-ts-webpack-starter.git"
+  },
+  "engines": {
+    "node": "^12.14.1",
+    "npm": "^6.13.4",
+    "yarn": "^1.21.1"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "build:prod": "npm run build",
