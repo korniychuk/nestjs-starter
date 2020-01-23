@@ -1,22 +1,22 @@
 {
   "name": "wallaby-ts-webpack",
+  "description": "",
+  "license": "MIT",
+  "private": true,
+  "version": "1.0.0",
   "bugs": {
     "url": "https://github.com/korniychuk/wallaby-ts-webpack-starter/issues"
   },
-  "description": "",
+  "homepage": "https://github.com/korniychuk/wallaby-ts-webpack-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korniychuk/wallaby-ts-webpack-starter.git"
+  },
   "engines": {
     "node": "^12.14.1",
     "npm": "^6.13.4",
     "yarn": "^1.21.1"
   },
-  "homepage": "https://github.com/korniychuk/wallaby-ts-webpack-starter#readme",
-  "license": "MIT",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/korniychuk/wallaby-ts-webpack-starter.git"
-  },
-  "version": "1.0.0",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "build:prod": "npm run build",
