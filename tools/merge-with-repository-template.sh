@@ -9,7 +9,8 @@ declare -r colorNc='\033[0m' # No Color
 declare -r tplRepoGit='git@github.com:korniychuk/wallaby-ts-starter.git'
 
 function execute() {
-  exec "${@}" 2> >(awk "${prefixAwkPattern}" 1>&2) | awk "${prefixAwkPattern}"
+  local -r command="${1}"; shift
+  "${command}" "${@}" 2> >(awk "${prefixAwkPattern}" 1>&2) | awk "${prefixAwkPattern}"
 }
 
 execute echo '------------------------ Merge With Template :: BEGIN ------------------------'
