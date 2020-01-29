@@ -79,7 +79,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.ts'],
+      files: ['**/*.ts'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         project: './tsconfig.json',
@@ -88,6 +88,13 @@ module.exports = {
       "settings": {
         "import/parsers":  {
           "@typescript-eslint/parser": [".ts"]
+        },
+        "import/resolver": {
+          "typescript": {
+            // use <root>/path/to/folder/tsconfig.json
+            // More examples: https://www.npmjs.com/package/eslint-import-resolver-typescript#configuration
+            "directory": "./tsconfig.json"
+          },
         },
       },
       plugins: [
