@@ -16,6 +16,9 @@ const moduleNameMapperAddRootDirSuffix = (moduleNameMapper, suffix) => Object.ke
 module.exports = {
   ...common,
   rootDir: '..',
+  roots: [
+    '<rootDir>',
+  ],
   testRegex: 'test/.*\\.e2e-spec\\.ts$',
-  moduleNameMapper: moduleNameMapperAddRootDirSuffix(common.moduleNameMapper, '/src'),
+  moduleNameMapper: moduleNameMapperAddRootDirSuffix(common.moduleNameMapper, '.'),
 };

@@ -24,10 +24,12 @@
       "node"
     ],
     "outDir": "./dist",
-    "baseUrl": "./src",
-    "rootDir": "./src",
+    "baseUrl": ".",
+    "rootDir": ".",
     "paths": {
-      "@app/*": [ "app/*" ]
+      "@app/*": [ "src/app/*" ],
+      "@configs/*": [ "src/configs/*" ],
+      "@src/*": [ "src/*" ]
     }
   },
   "include": [

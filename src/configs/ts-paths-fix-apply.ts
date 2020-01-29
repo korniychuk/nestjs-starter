@@ -19,7 +19,7 @@ interface PathAlias {
 
 export const applyTsPathFix = (): void => {
   getTsConfigPaths().forEach((one: PathAlias) => {
-    const absoluteTarget = path.join(__dirname, one.path);
+    const absoluteTarget = path.join(__dirname, '../..', one.path);
 
     moduleAliases.addAlias(one.alias, absoluteTarget);
   });

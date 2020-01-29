@@ -82,7 +82,7 @@ module.exports = {
       files: ['*.ts'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        project: './tsconfig.json',
+        project: './tsconfig.lint.json',
         ecmaVersion: 2020,
       },
       "settings": {
@@ -93,7 +93,7 @@ module.exports = {
           "typescript": {
             // use <root>/path/to/folder/tsconfig.json
             // More examples: https://www.npmjs.com/package/eslint-import-resolver-typescript#configuration
-            "directory": "./tsconfig.json"
+            "directory": "./tsconfig.lint.json"
           },
         },
       },
