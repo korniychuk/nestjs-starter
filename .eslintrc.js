@@ -137,7 +137,6 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/unbound-method': 'off',
         '@typescript-eslint/no-inferrable-types': 'off',
-        'import/extensions': ['error', 'ignorePackages', { 'json': 'always' }]
       },
     },
     {
