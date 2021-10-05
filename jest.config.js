@@ -2,7 +2,7 @@ const { getTsConfigPaths } = require('./configs/ts-paths-fix-helpers');
 
 const makeModuleNameMapper = () => getTsConfigPaths()
     .map(({ alias, path }) => ({
-      alias: `${ alias }(.*)`,
+      alias: `^${ alias }(.*)`,
       path:  `<rootDir>/${ path }$1`,
     }))
     .reduce((all, { alias, path }) => ({ ...all, [alias]: path }), {});
@@ -31,7 +31,7 @@ module.exports = {
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: [
-    '**/*.(t|j)s',
+    '**/*.(t|j)s', // TODO: fix it
   ],
 
   // The directory where Jest should output its coverage files
